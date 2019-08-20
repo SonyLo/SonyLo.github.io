@@ -32,3 +32,23 @@ a:hover{
 
 
 
+@media (max-width:1400px)
+{
+    html{
+        font-size: 13px;
+    } 
+}
+
+@media (max-width:1050px)
+{
+    html{
+        font-size: 10px;
+    } 
+}
+
+@media (max-width:1260px)
+{
+    html{
+        font-size: 11px;
+    } 
+}
