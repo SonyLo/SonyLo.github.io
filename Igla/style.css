@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Play:700&display=swap');
+.logo{
+    font-family: 'Play', sans-serif;
+    font-size: 60px; color: #000 !important; line-height: 60px; letter-spacing: 0px; 
+}
+.logo_ser{
+    font-family: 'Play', sans-serif;
+    font-size: 60px; color: #fff !important; line-height: 60px; letter-spacing: 0px; 
+}
+body{
+   background-color: #fff;
+}
+
+.nav-link{
+   color: #fff;
+}
+a:hover{
+    color: #a8d8ff;
+}
+
+section#main{
+    
+    min-height: 650px;
+   
+    
+    
+}
+
+
+.blinking{
+    font-size: 1.3rem;
+    animation:blinking 1.2s infinite;
+}
+@keyframes blinking{
+    0%{color:rgba(255, 255, 255, 1);}
+    50%{color:rgba(255, 255, 255, 0);}
+    100%{color:rgba(255, 255, 255, 1);}
+}
+
+
+
+@media (max-width:1400px)
+{
+    html{
+        font-size: 13px;
+    } 
+}
+
+@media (max-width:1050px)
+{
+    html{
+        font-size: 10px;
+    } 
+}
+
+@media (max-width:1260px)
+{
+    html{
+        font-size: 11px;
+    } 
+}
+
+
+
+/* кнопка 2 */
+.btpretty {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+   
+    margin: 10px 20px;
+    border-radius: 10px;
+    
+    
+    /* letter-spacing: 2px; */
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+  }
+  .btpretty:hover {background-position: right center;}
+/* кнопка 2 */
+
+/* кнопка 3 */
+  .bt {
+	margin: 0 20px;
+    padding: 10px 10px;
+	overflow: hidden;
+	
+    color: white;
+	   
+   
+	font-weight: 600;
+    border-width: 0;    
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	outline: none;
+    cursor: pointer; 
+}
+
+.btn3 {
+	background: linear-gradient(90deg, #c600b2, #7619fd);
+}
+.bt:before, 
+.bt:after {    
+    content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+    height: 100%;
+    left: -110%;
+    top: 0;
+	opacity: 0.1;
+	background: black;    
+    transform: skewX(25deg);    
+	transition: .5s ease;
+}
+.bt:hover:before {
+    left: -10%;
+    transition: .3s ease;
+}
+.bt:hover:after {
+    left: -20%;
+}
+
+/* кнопка 3 */
